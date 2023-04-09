@@ -21,6 +21,7 @@ public class Garage{
      * private classType [] varName = new classType[size];
      *
      */
+       private Car [] cars = new Car[3];
 
     /************ Part 2 **************/
     /**
@@ -31,7 +32,7 @@ public class Garage{
      * public dataType varName= value;
      *
      */
-
+     public static  int countCars= 0;
     /************ Part 3 **************/
     /**
      * Define a default constructor to create
@@ -45,6 +46,11 @@ public class Garage{
      *     }
      *}
      */
+     public Garage (){
+      	   for(int i=0; i<cars.length; i++){
+               cars[i]= new Garage();
+           }
+      }
 
     /************ Part 4 **************/
     /**
@@ -59,7 +65,7 @@ public class Garage{
      * Syntax:
      * public void methodName(String m)
      */
-
+      public void addCar(String m)
 
     /************ Part 5 **************/
     /**
@@ -72,7 +78,7 @@ public class Garage{
      *
      */
 
-
+     public void moveOut(String m)
 
     /************ Part 6 **************/
     /**
@@ -84,7 +90,7 @@ public class Garage{
      * public void methodName(String m)
      *
      */
-
+           public void moveOut(String m)
 
     /************ Part 7 **************/
     /**
@@ -95,7 +101,7 @@ public class Garage{
      * public void methodName(String m)
      *
      */
-
+      public void listCars(String m)     
 
 
 }
